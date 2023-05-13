@@ -1,0 +1,51 @@
+body {
+    background-image: url('../images/Background1.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+  }
+
+  .texto {
+    margin-bottom: 20px;
+  }
+
+  .opciones {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .opcion {
+    margin: 20px 0;
+    display: inline-flex;
+  }
+
+  .icono {
+    font-size: 48px;
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+
+  .logo {
+    margin: auto;
+    width: 100px;
+    height: 100px;
+  }
+
+  .logo img{
+    width: 100%;
+  }
