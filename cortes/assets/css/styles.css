@@ -1,9 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
+
 body {
     background-image: url('../images/Background1.jpeg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
   }
 
   .container {
@@ -16,7 +22,17 @@ body {
   }
 
   .texto {
+    /* border: 1px solid black; */
+    max-width: 250px;
     margin-bottom: 20px;
+    color: white;
+    font-family: 'Abril Fatface', cursive;
+  }
+
+  .aling-right{
+    text-align: right;
+    /* margin: 0px; */
+    /* padding: 0px; */
   }
 
   .opciones {
@@ -29,9 +45,37 @@ body {
     margin: 0;
   }
 
-  .opcion {
-    margin: 20px 0;
+  .icon-text{
+    max-width: 30px;
+  }
+
+  .text-option p{
+    margin: 0px 0px 0px 20px;
+    color: black;
+  }
+
+  .text-option{
+    display: flex;
+    align-items: center;
+    font-family: 'ABeeZee', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  .opcion a {
+    margin: 5px 0;
     display: inline-flex;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 200px;
+    height: auto;
+    border-radius: 25px;
+    /* opacity: 50%; */
+    padding: 1px;
+    text-decoration: none;
+  }
+
+  .opcion img{
+    opacity: unset;
   }
 
   .icono {
@@ -42,10 +86,121 @@ body {
 
   .logo {
     margin: auto;
-    width: 100px;
-    height: 100px;
+    width: 200px;
   }
 
-  .logo img{
+  .logo img,
+  .logo-interno img{
     width: 100%;
+  }
+
+  .con-relative{
+    /* position: relative; */
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-content: space-between;
+  }
+
+  .footer{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    bottom: 10px;
+    /* margin-bottom: 10px; */
+  }
+
+  .logo-interno{
+    max-width: 60px;
+  }
+
+  .canciones-lista,
+  .afinador{
+    position: relative;
+    top: 0px;
+    margin-top: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  .buscador{
+    background-color: white;
+    width: 100%;
+    border-radius: 25px;
+    padding: 2px 0px 2px 2px;
+  }
+
+  .buscador img{
+    position: relative;
+    right: 0px;
+  }
+
+  .canciones-lista ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .canciones-lista ul li{
+    margin: auto;
+  }
+
+  .canciones-lista a{
+    text-decoration: none;
+    font-family: 'ABeeZee', sans-serif;
+    font-size: 10px;
+  }
+
+  .iconos-cancion{
+    display: flex;
+    justify-content: center;
+  }
+
+  .iconos-cancion img{
+    width: 30px;
+  }
+
+  .detalles-cancion,
+  .main-content{
+    font-family: 'ABeeZee', sans-serif;
+    font-size: 10px;
+    color: black;
+    margin-top: 10px;
+  }
+
+  .detalles-cancion p{
+    margin: 5px 0 5px;
+  }
+
+  .detalles-cancion .titulo{
+    font-size: 14px;
+  }
+
+  .detalles-cancion .album{
+    font-size: 9px;
+    font-style: italic;
+    /* text-decoration: underline; */
+  }
+
+  .detalles-cancion .autor{
+    font-size: 10px;
+  }
+
+  .main-content{
+    margin-top: 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.295);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+  }
+
+  .main-content p{
+    margin: 5px;
+  }
+
+  .afinador img{
+    max-width: 100%;
   }
